@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopppy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+        <div class="col_1">
+            <div class="p_bg">
+                <img src="img/Shoe.png" alt="" id="prImg">
+            </div>
+        </div>
+        <div class="col_2">
+            <div class="nev">
+                <p>DevPraveen</p>
+                <div class="nev_icon">
+                    <span><a href=""><img src="/img/search.svg" alt=""></a></span>
+                    <span><a href=""><img src="/img/User.svg" alt=""></a></span>
+                    <span><a href=""><img src="/img/cart.svg" alt=""></a></span>
+                </div>
+            </div>
+            <div class="content">
+                <p id="sc">Summer Collection</p>
+                <p id="ws">Woman Sneakers</p>
+                <p id="pr">$150  <span> $200</span></p>
+                <div class="clr">
+                    <p id="sz">SIZE <span>7 8 9 10 11 </span></p>
+                </div>
+                <div class="clr">
+                    <p>COLOR </p>
+                    <span><img onclick="imgC()"src="/img/blue.svg" alt=""></span>
+                    <span><img onclick="imgB()" src="/img/black.svg" alt=""></span>
+                    <span><img onclick="imgG()" src="/img/yellow.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="btnGroup">
+                <button><span><img src="img/$.svg" alt=""></span>Buy Now</button>
+                <button><span><img src="img/cart copy.svg" alt=""></span>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script>
+    function imgC(){
+        document.getElementById('prImg').src="img/daco-45999112.png";
+    }
+    function imgG(){
+       let imgGR = document.getElementById('prImg');
+       imgGR.src="img/gs.png";
+
+    }
+    function imgB(){
+        document.getElementById('prImg').src="img/Shoe.png";
+    }
+    
+  </script>
+</body>
+</html>
