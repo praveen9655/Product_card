@@ -207,6 +207,7 @@ body{
         font-weight: 400;
         line-height: normal;
         display: flex;
+        margin-left: 5px;
         justify-content: space-between;
     }
     .nev_icon span a img{
