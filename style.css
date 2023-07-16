@@ -48,6 +48,9 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
+#smnav{
+    display: none;
+}
 .nev{
     width: 460px;
     color: #FE6D38;
@@ -134,4 +137,154 @@ body{
 }
 .btnGroup button span{
     margin-right: 10px;
+}
+
+@media (max-width : 900px){
+    body{
+        background: #252830;
+        backdrop-filter: blur(7.5px);
+    }
+    .container{
+        height: 100dvh;
+        padding-top:100px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 340px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background: #2A2F40;
+        box-shadow: 5px 27px 36px 0px rgba(0, 0, 0, 0.25);
+
+    }
+    .p_bg{
+        width: 340px;
+        
+        height: 330px;
+        border-radius: 0px 0px 500px 500px;
+        background: #FE6D38;
+        box-shadow: -26px 0px 41px -19px rgba(0, 0, 0, 0.25);
+    }
+    .p_bg img {
+        width: 380px;
+        position: relative;
+        left: -30px;
+        transform: rotate(10.488deg);
+        top: 10px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+    .p_bg img:hover{
+        width: 400px;
+        transition: all 1s;
+    
+    }
+    .col_2{
+        width: 330px;
+        padding-left: 0px;
+        padding: 5px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #smnav{
+        display: block;
+        display: flex;
+    }
+    #lgnav{
+        display: none;
+    }
+    .nev1{
+        width: 330px;
+        color: #FE6D38;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nev_icon span a img{
+        width: 15px;
+        margin: 3px;
+    }
+    .content{
+        padding: 10px;
+        color: #FFF;
+        font-family: Poppins;
+    }
+    
+    #sc{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    #ws{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 10px;
+    }
+    #pr{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 20px;
+        word-spacing: 20px;
+    }
+    #pr span{
+        text-decoration: line-through ;
+        text-decoration-color: red;
+    }
+    #sz span{
+        margin-left: 10px;
+        word-spacing: 20px;
+    }
+    .clr{
+      display: flex;
+      width: 200px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+        cursor: pointer;
+      margin-top: 10px;
+    
+    }
+    .btnGroup{
+        width: 330px;
+        margin: 20px 0px 20px 0px;
+        display: flex;
+        justify-content: space-around ;
+    }
+    .btnGroup button{
+        width: 125px;
+        height: 40px;
+        border: 0;
+        border-radius: 41px;
+        background: #FE6D38;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .btnGroup button span{
+        margin-right: 10px;
+    }
 }
